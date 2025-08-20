@@ -2548,3 +2548,7 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+svg{
+  opacity: 0.5;
+}
