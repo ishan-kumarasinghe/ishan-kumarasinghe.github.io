@@ -188,24 +188,53 @@
               </ul>
               <p>
                 The system uses multiple hardware devices to capture sensor readings and transmits them via MQTT to Firestore, enabling live monitoring through a mobile app (Flutter) and web app (React + Vite).
-              </p>
-              <p>An independent ML model (YOLOv5) processes aerial images to detect tree count and assess tree health, hosted via Cloud Run.</p>
-              <p><strong>Hardware Devices,</strong></p>
+              An independent ML model (YOLOv5) processes aerial images to detect tree count and assess tree health, hosted via Cloud Run.</p>
+              <h4>Hardware Devices</h4>
               <ul>
                 <li>Portable Unit- Field workers collect soil data using ESP32, NPK, Moisture, GPS, RTC, SD card, LCD. Stores data offline when Wi-Fi is unavailable.</li>
-                <li>Fixed Unit- Continuously monitors field data. Sends periodic readings to the cloud via MQTT with Wi-Fi and status indicators.</li>
+                <p>The Portable Device is a mobile unit carried by field workers to measure soil parameters at specific locations. It is equipped with multiple sensor modules including an NPK sensor, Soil Moisture sensor, GPS module (Neo-6M), Real-Time Clock (RTC), SD card module, LCD display, and an ESP32 Dev Kit V1 as the core microcontroller. One of its standout capabilities is the ability to store sensor data offline, using RTC timestamps when a Wi-Fi connection is not available. The device is battery-powered and highly reliable for extended field usage.</p>
+                <li>Fixed Unit- Continuously monitors field data and sends periodic readings to the cloud via MQTT with Wi-Fi and status indicators.</li>
+                <p>The Fixed Device is a stationary monitoring setup designed for continuous deployment in agricultural fields. It continuously monitors environmental parameters and periodically sends sensor data to the cloud using MQTT. To aid in diagnostics and usability, it includes, successful data transmission, and sensor functioning. This setup is particularly suitable for long-term monitoring and acts as a foundation for early warning systems in precision agriculture.</p>
               </ul>
 
-              <p><strong>Mobile App,</strong></p>
-              <p>Built with Flutter + Firebase, provides real-time and historical sensor data, interactive graphs, offline sync, and alert systems.</p>
-              <p><strong>Web App,</strong></p>
-              <p>Made with React + Vite, hosted on Firebase, offering live dashboards, trend analysis, geo-mapping of devices, and sensor status.</p>
+              <div class="row align-items-center big-box p-5">
+              <!-- Left column - Image -->
+                <div class="col-lg-6">
+                  <center><h5>Portable Device Demonstration</h5></center>
+                  <center><video controls muted class="rounded" width="auto" height="600px">
+                    <source src="assets/video/portableDeviceDemoVideo.mp4" type="video/mp4" style="height:;">
+                    Your browser does not support the video tag.
+                  </video></center>
+                </div>
 
-              <p><strong>ML Model,</strong></p>
-              <p>Uses YOLOv5 to analyze aerial images and detect tree count and tree health (Healthy/Unhealthy). Deployed on Google Cloud Run, accessible via API for web/mobile input.</p>
+              <!-- Right column - Description -->
+                <div class="col-lg-6">
+                  <center><h5>Fixed Device Demonstration</h5></center>
+                  <center><video controls muted class="rounded" width="auto" height="600px">
+                    <source src="assets/video/fixedDeviceDemoVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video></center>
+                </div>
 
-              <p><strong>Outcome,</strong></p>
-              <p>Accurate, geo-tagged insights for precision farming with a deployment-ready architecture.</p>
+              </div>
+
+              <h4>Mobile Application</h4>
+              <p>The mobile application is built using Flutter, integrated with Firebase, Firestore, and MQTT for seamless cloud communication. It provides users with access to real-time and historical data through an intuitive interface. The app features interactive graphs, sensor-based alerts, and the ability to sync data offline, ensuring field workers can operate effectively even without internet access.</p>
+
+              <h4>Web Application</h4>
+              <p>The web dashboard is developed with a modern stack: React, Vite, and is hosted on Firebase. It offers an interactive dashboard that displays data insights such as geo-located sensor mapping, trend analysis of soil nutrients (NPK), environmental conditions, and detailed device connectivity status.</p>
+              <p>Access the web application using the link: <a href="https://environment-monitoring-s-d169b.web.app/" target="_blank">https://environment-monitoring-system.app/</a></p>
+              
+              <h4>ML Model</h4>
+              <p>The software system is extended with a separate Machine Learning model based on YOLOv5 for advanced agricultural insights. It is trained to process aerial or field images to deliver two core outputs: Tree Count and Tree Health Classification (Healthy or Unhealthy trees). This model is deployed on Google Cloud Run, and accessible via a RESTful API that accepts image uploads from both the mobile and web interfaces.</p>
+
+              <h4>Outcome</h4>
+              <ul>
+                <li>Accurate, geo-tagged soil health monitoring</li>
+                <li>AI-powered plant analysis for decision-making</li>
+                <li>Real-time and historical insights through mobile and web apps</li>
+                <li>Field-validated deployment-ready architecture</li>
+              </ul>
 
               <div class="features mt-4">
                 <h3>Key Features</h3>
