@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ishan Kumarasinghe</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/IshanLogo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
+          <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://x.com/Ishan_Thathsara?t=pkKLsA0NtV2pU-R1LYrBnQ&s=08" target="_blank" class="twitter"><i
+            class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/16oDD1zCFL/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/ishan_thathsara?igsh=MTFrajdjZXR0dzcxYw==" target="_blank" class="instagram"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://github.com/ishan-kumarasinghe" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/ishan-kumarasinghe" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Department Engagement Career Platform (DECP)</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Project Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/departmt-engagemt-career-platform/Web_app_feed.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/departmt-engagemt-career-platform/Web_app_profile.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/departmt-engagemt-career-platform/Web_app_jobs.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/departmt-engagemt-career-platform/Web_app_notifications.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/departmt-engagemt-career-platform/Web_app_chats.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Cloud-Native Microservices based System</li>
+                <li><strong>Client</strong>: Department of Computer Engineering</li>
+                <li><strong>Time</strong>:  Jan 2026-March 2026</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/ishan-kumarasinghe/Department-Engagement-Career-Platform.git" target="_blank">Department-Engagement-Career-Platform</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                The Department Engagement & Career Platform (DECP) is a full-stack, production-grade application designed to connect university students, faculty, and alumni within an academic department. It provides a professional networking experience -similar to LinkedIn- tailored for department-level engagement, featuring a social feed, job board, real-time chat, and intelligent notifications.
+              </p>
+              <p>
+                Rather than building a monolithic application, DECP was engineered from the ground up as a distributed microservices system — decomposed into independently deployable services that communicate through both synchronous REST APIs and asynchronous event-driven messaging. The entire stack is containerized with Docker and deployed to AWS using ECS Fargate, behind an Application Load Balancer, with managed message brokering through Amazon MQ.
+              </p>
+              <p>
+                This project demonstrates real-world proficiency in distributed systems design, cloud infrastructure, DevOps practices, and cross-platform development spanning both web (React) and mobile (React Native/Expo).
+              </p>
+
+              <h4>Microservices Architecture</h4>
+              <h5>System Overview</h5>
+
+              <div class="row justify-content-center big-box p-4">
+  
+                <div class="col-lg-8 text-center">
+                  
+                  <!-- Optional title -->
+                  <!-- <h5 class="mb-3">Project Preview</h5> -->
+
+                  <a href="assets/img/projects/departmt-engagemt-career-platform/High-level-architecture.png" class="glightbox">
+                    <img src="assets/img/projects/departmt-engagemt-career-platform/High-level-architecture.png" 
+                        alt="Project Image" 
+                        class="img-fluid rounded w-100 shadow"
+                        style="max-height: 800px; object-fit: cover;">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <p>
+                DECP follows a domain-driven decomposition strategy, where each bounded context in the business domain maps to an independent microservice with its own database, codebase, and deployment lifecycle.
+              </p>
+
+              <h5>Technology Stack</h5>
+
+              <div class="container my-5">
+                <div class="tech-card p-3">
+
+                  <!-- <h4 class="mb-4">Architecture & Tech Stack</h4> -->
+
+                  <div class="tech-row">
+                    <span class="tech-label">Runtime</span>
+                    <span class="tech-value">Node.js 20 (Alpine Linux)</span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">Framework</span>
+                    <span class="tech-value">Express.js</span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">Database</span>
+                    <span class="tech-value">MongoDB Atlas (separate DB per service)</span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">Message Broker</span>
+                    <span class="tech-value">RabbitMQ (AMQP 0-9-1)</span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">Authentication</span>
+                    <span class="tech-value">JWT with HTTP-only refresh tokens</span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">API Gateway</span>
+                    <span class="tech-value">
+                      Express +
+                      <span>http-proxy-middleware</span>
+                    </span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">Security</span>
+                    <span class="tech-value">
+                      Helmet, CORS,
+                      <span>express-rate-limit</span>,
+                      bcrypt
+                    </span>
+                  </div>
+
+                  <!-- <div class="tech-row">
+                    <span class="tech-label">Fault Tolerance</span>
+                    <span class="tech-value">Opossum circuit breaker</span>
+                  </div> -->
+
+                  <div class="tech-row">
+                    <span class="tech-label">Web Frontend</span>
+                    <span class="tech-value">React 18, Vite, Tailwind CSS</span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">Mobile Frontend</span>
+                    <span class="tech-value">React Native (Expo)</span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">Containerization</span>
+                    <span class="tech-value">Docker, Docker Compose</span>
+                  </div>
+
+                  <div class="tech-row">
+                    <span class="tech-label">Cloud Platform</span>
+                    <span class="tech-value">AWS (ECS Fargate, ALB, Amazon MQ, SSM, CloudWatch)</span>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <h4>Deployment</h4>
+
+              <div class="row justify-content-center big-box p-4">
+  
+                <div class="col-lg-8 text-center">
+                  
+                  <!-- Optional title -->
+                  <!-- <h5 class="mb-3">Project Preview</h5> -->
+
+                  <a href="assets/img/projects/departmt-engagemt-career-platform/Deployment-architecture.png" class="glightbox">
+                    <img src="assets/img/projects/departmt-engagemt-career-platform/Deployment-architecture.png" 
+                        alt="Project Image" 
+                        class="img-fluid rounded w-100 shadow"
+                        style="max-height: 800px; object-fit: cover;">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="container my-5">
+                <div class="tech-card p-4">
+
+                  <!-- <h4 class="mb-4">AWS Architecture & Services</h4> -->
+
+                  <div class="table-responsive">
+                    <table class="table tech-table align-middle">
+                      <thead>
+                        <tr>
+                          <th>AWS Service</th>
+                          <th>Purpose</th>
+                          <th>Configuration</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>ECS Fargate</td>
+                          <td>Serverless container orchestration</td>
+                          <td>6 services, auto-scaling capable</td>
+                        </tr>
+
+                        <tr>
+                          <td>Application Load Balancer</td>
+                          <td>Traffic routing & SSL termination</td>
+                          <td>
+                            Path-based routing:
+                            <span class="tag">/api/*</span> → API Gateway,
+                            <span class="tag">/*</span> → Frontend
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Amazon MQ</td>
+                          <td>Managed RabbitMQ broker</td>
+                          <td>
+                            <span class="tag">mq.t3.micro</span>, single-instance, AMQPS (TLS)
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>SSM Parameter Store</td>
+                          <td>Secrets management</td>
+                          <td>JWT secrets, MongoDB URIs, RabbitMQ URL</td>
+                        </tr>
+
+                        <tr>
+                          <td>CloudWatch</td>
+                          <td>Centralized logging & monitoring</td>
+                          <td>Log groups per ECS service</td>
+                        </tr>
+
+                        <tr>
+                          <td>Cloud Map</td>
+                          <td>Service discovery namespace</td>
+                          <td>
+                            <span class="tag">decp.local</span> with DNS-based resolution
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>IAM</td>
+                          <td>Access control</td>
+                          <td>Task execution role with SSM + CloudWatch policies</td>
+                        </tr>
+
+                        <tr>
+                          <td>EC2 Security Groups</td>
+                          <td>Network-level firewalling</td>
+                          <td>ALB SG → Container SG (self-referencing for internal traffic)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+              
+              <h4>Demonstration</h4>
+
+              <div class="row justify-content-center big-box p-5">
+                
+                <div class="col-lg-8 text-center">
+                  
+                  <!-- <h5 class="mb-3">Device Demonstration</h5> -->
+
+                  <video controls muted class="rounded" width="auto" height="600px">
+                    <source src="assets/video/DECPMobileappDemo.mp4" type="video/mp4" style="height:600px;">
+                    Your browser does not support the video tag.
+                  </video>
+
+                </div>
+
+              </div>
+
+              <p>The DECP provides secure, scalable, and impactful automation that enhances accountability, and facilitates seamless collaboration among students, alumni, and Faculty.</p>
+
+              <h4>Links</h4>
+              
+              <p>Access the application using the link: <a href="https://decpcepdnlk.vercel.app/" target="_blank">https://decpcepdnlk.app/</a></p>
+              
+              <p>Github Repository link: <a href="https://github.com/ishan-kumarasinghe/Department-Engagement-Career-Platform.git" target="_blank">https://github.com/Department-Engagement-Career-Platform</a></p>
+              <p>Public Docker images: ishanthathsara/decp-api-gateway, ishanthathsara/decp-web-app, ishanthathsara/decp-user-service, ishanthathsara/decp-content-service, ishanthathsara/decp-notification-service, ishanthathsara/decp-chat-service</p>
+
+              <div class="features mt-4">
+                <h3>Key Features</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-clock"></i>
+                      <h4>Student Lifecycle Management</h4>
+                      <p>From registration to graduation, the system supports every academic milestone</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-shield-check"></i>
+                      <h4>Role-Based User Access</h4>
+                      <p>Admins, students, supervisors, and examiners access distinct interfaces and actions based on their roles</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-pen"></i>
+                      <h4>Examiner Assignment</h4>
+                      <p>Admins assign examiners while the system prevents duplicates or role conflicts automatically</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-plus-lg"></i>
+                      <h4>Submission Portal</h4>
+                      <p>Students upload half-yearly and final reports; examiners provide structured evaluations and feedback</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
+                      <i class="bi bi-check-circle-fill"></i>
+                      <h4>Enrollment Module</h4>
+                      <p>Students enroll online and admins review and approve submissions of students</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email Notification System</h4>
+                      <p>Automated emails for submission reminders, approval status, and examiner feedback using customizable templates</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <!-- <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p> -->
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
