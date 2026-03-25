@@ -203,7 +203,13 @@
               </div>
 
               <p>
-                DECP follows a domain-driven decomposition strategy, where each bounded context in the business domain maps to an independent microservice with its own database, codebase, and deployment lifecycle.
+                The system is designed as a collection of independent services that work together to deliver a seamless user experience. Instead of a single large application, each core functionality -such as user management, content handling, notifications, and messaging- is implemented as a separate service.
+              </p>
+              <p>
+                A central API Gateway acts as the entry point, routing requests from web and mobile clients to the appropriate services. Communication between services happens in two ways: direct API calls for immediate responses, and asynchronous messaging for background tasks such as notifications.
+              </p>
+              <p>
+                This approach ensures that the system remains flexible, scalable, and resilient, allowing individual components to evolve without affecting the entire platform.
               </p>
 
               <h5>Technology Stack</h5>
@@ -283,8 +289,52 @@
                 </div>
               </div>
 
+              <h4>Service Breakdown</h4>
+              <p>
+                The platform is composed of multiple specialized services, each responsible for a specific domain within the system.
+              </p>
+
+              <h6>API Gateway</h6>
+              <p>
+                Acts as the single entry point for all client requests. It handles routing, security, and request validation, ensuring that traffic is efficiently directed to the appropriate backend services.
+              </p>
+
+              <h6>User Service</h6>
+              <p>
+                Manages authentication, user profiles, and connections between users. It ensures secure access through token-based authentication and maintains user-related data.
+              </p>
+
+              <h6>Content Service</h6>
+              <p>
+                Handles all social and career-related features including posts, comments, likes, and job listings. It powers the main interaction layer of the platform.
+              </p>
+
+              <h6>Notification Service</h6>
+              <p>
+                Operates in an event-driven manner to generate notifications based on user activity. It ensures users stay informed without tightly coupling services together.
+              </p>
+
+              <h6>Chat Service</h6>
+              <p>
+                Provides real-time messaging capabilities along with persistent conversation history, enabling seamless communication between users.
+              </p>
+
+              <h4>Design Decisions</h4>
+              <p>
+                The system was intentionally designed using a microservices architecture to reflect real-world software engineering practices. Each service maintains its own database, ensuring independence and reducing the risk of system-wide failures.
+              </p>
+              <p>
+                A combination of synchronous and asynchronous communication was used to balance performance and scalability. Immediate user interactions are handled through direct API calls, while background processes such as notifications rely on message queues.
+              </p>
+              <p>
+                Security and reliability were also key considerations, with mechanisms such as token-based authentication, rate limiting, and fault-tolerance patterns incorporated into the system design.
+              </p>
 
               <h4>Deployment</h4>
+
+              <p>
+                The platform is deployed on AWS using a serverless container approach with ECS Fargate. This eliminates the need to manage servers while providing automatic scalability and high availability.
+              </p>
 
               <div class="row justify-content-center big-box p-4">
   
@@ -380,8 +430,25 @@
 
                 </div>
               </div>
+
+              <p>
+                An Application Load Balancer routes incoming traffic to the appropriate services, while managed services such as Amazon MQ handle messaging between components. Sensitive configurations and secrets are securely managed using AWS Systems Manager, and system logs are centralized through CloudWatch for monitoring and debugging.
+              </p>
+              <p>
+                This cloud-based setup reflects production-level deployment practices used in modern distributed systems.
+              </p>
               
-              <h4>Demonstration</h4>
+              <h4>Cross-Platform Applications</h4>
+
+              <p>
+                The platform includes both a web application and a mobile application built on a shared backend.
+              </p>
+
+              <p>
+                The web client is developed using React, providing a fast and responsive user interface for desktop users. The mobile application is built with React Native, enabling cross-platform support for both Android and iOS devices.
+              </p>
+
+              <h6>Mobile App Demonstration</h6>
 
               <div class="row justify-content-center big-box p-5">
                 
@@ -398,6 +465,10 @@
 
               </div>
 
+              <p>
+                Both clients communicate with the same backend services, ensuring consistency in features and user experience across platforms.
+              </p>
+
               <p>The DECP provides secure, scalable, and impactful automation that enhances accountability, and facilitates seamless collaboration among students, alumni, and Faculty.</p>
 
               <h4>Links</h4>
@@ -412,49 +483,49 @@
                 <div class="row gy-3">
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-clock"></i>
-                      <h4>Student Lifecycle Management</h4>
-                      <p>From registration to graduation, the system supports every academic milestone</p>
+                      <i class="bi bi-hdd-stack"></i>
+                      <h4>Microservices-based architecture</h4>
+                      <p>Independently deployable services ensuring scalability and flexibility</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                       <i class="bi bi-shield-check"></i>
-                      <h4>Role-Based User Access</h4>
-                      <p>Admins, students, supervisors, and examiners access distinct interfaces and actions based on their roles</p>
+                      <h4>Secure Authentication</h4>
+                      <p>JWT-based authentication with secure refresh token mechanism</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-pen"></i>
-                      <h4>Examiner Assignment</h4>
-                      <p>Admins assign examiners while the system prevents duplicates or role conflicts automatically</p>
+                      <i class="bi bi-cloud"></i>
+                      <h4>Scalable Cloud Deployment</h4>
+                      <p>Cloud infrastructure deployed using AWS services</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-plus-lg"></i>
-                      <h4>Submission Portal</h4>
-                      <p>Students upload half-yearly and final reports; examiners provide structured evaluations and feedback</p>
+                      <i class="bi bi-clock"></i>
+                      <h4>Real-time Communication System</h4>
+                      <p>Real-time and asynchronous messaging using event-driven architecture</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
                       <i class="bi bi-check-circle-fill"></i>
-                      <h4>Enrollment Module</h4>
-                      <p>Students enroll online and admins review and approve submissions of students</p>
+                      <h4>Cross-Platform Access</h4>
+                      <p>Seamless experience across web and mobile applications</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
                       <i class="bi bi-envelope"></i>
-                      <h4>Email Notification System</h4>
-                      <p>Automated emails for submission reminders, approval status, and examiner feedback using customizable templates</p>
+                      <h4>Responsive Notification System</h4>
+                      <p>Activity-driven notifications keeping users informed in real time</p>
                     </div>
                   </div>
                 </div>
