@@ -1,334 +1,546 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ishan Kumarasinghe</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ishan Kumarasinghe</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/IshanLogo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/IshanLogo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <body class="index-page">
+    <header
+      id="header"
+      class="header dark-background d-flex flex-column justify-content-center"
+    >
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-  <!-- =======================================================
-  * Template Name: SnapFolio
-  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-  * Updated: Jul 21 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="header-container d-flex flex-column align-items-start">
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#home" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="index.html#projects"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
-          <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="social-links text-center">
-        <a href="https://x.com/Ishan_Thathsara?t=pkKLsA0NtV2pU-R1LYrBnQ&s=08" target="_blank" class="twitter"><i
-            class="bi bi-twitter-x"></i></a>
-        <a href="https://www.facebook.com/share/16oDD1zCFL/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/ishan_thathsara?igsh=MTFrajdjZXR0dzcxYw==" target="_blank" class="instagram"><i
-            class="bi bi-instagram"></i></a>
-        <a href="https://github.com/ishan-kumarasinghe" target="_blank" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/ishan-kumarasinghe" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Smart Agriculture Monitoring System (SAMS)</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Project Details</li>
-          </ol>
+      <div class="header-container d-flex flex-column align-items-start">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html#home" class="active"
+                ><i class="bi bi-house navicon"></i>Home</a
+              >
+            </li>
+            <li>
+              <a href="index.html#about"
+                ><i class="bi bi-person navicon"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="index.html#resume"
+                ><i class="bi bi-file-earmark-text navicon"></i> Resume</a
+              >
+            </li>
+            <li>
+              <a href="index.html#portfolio"
+                ><i class="bi bi-images navicon"></i> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="index.html#projects"
+                ><i class="bi bi-hdd-stack navicon"></i> Projects</a
+              >
+            </li>
+            <li>
+              <a href="index.html#contact"
+                ><i class="bi bi-envelope navicon"></i> Contact</a
+              >
+            </li>
+          </ul>
         </nav>
-      </div>
-    </div><!-- End Page Title -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/sams/thumbnail1.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/sams/Field Visit1.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/sams/Field Visit6.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/sams/Field Visit4.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/sams/portableDevice.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/sams/3d design.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Category</strong>: End to End IoT Project</li>
-                <li><strong>Client</strong>: <a href="https://watawalaplantations.lk/" target="_blank">Watawala Palm Oil Plantation</a></li>
-                <li><strong>Time</strong>:  Dec 2024-Jul 2025</li>
-                <li><strong>Project URL</strong>: <a href="https://cepdnaclk.github.io/e20-3yp-Smart-Environmental-Monitoring-System-for-Palm-Oil-Plantation/" target="_blank">www.sams.com</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-12">
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Project Overview</h2>
-              <p>
-                This project is a complete IoT-based smart agriculture monitoring system designed to enhance farming decisions by collecting, analyzing, and visualizing real-time environmental and soil data. The list of parameters are,
-              </p>
-              <ul>
-                <li>NPK (Nitrogen, Phosphorus, Potassium) values of soil</li>
-                <li>Soil Moisture</li>
-                <li>Rain gauge</li>
-                <li>Sunlight Intensity</li>
-                <li>Temperature</li>
-                <li>Humidity</li>
-              </ul>
-              <p>
-                The system uses multiple hardware devices to capture sensor readings and transmits them via MQTT to Firestore, enabling live monitoring through a mobile app (Flutter) and web app (React + Vite).
-              An independent ML model (YOLOv5) processes aerial images to detect tree count and assess tree health, hosted via Cloud Run.</p>
-              <h4>Hardware Devices</h4>
-              <ul>
-                <li>Portable Unit- Field workers collect soil data using ESP32, NPK, Moisture, GPS, RTC, SD card, LCD. Stores data offline when Wi-Fi is unavailable.</li>
-                <p>The Portable Device is a mobile unit carried by field workers to measure soil parameters at specific locations. It is equipped with multiple sensor modules including an NPK sensor, Soil Moisture sensor, GPS module (Neo-6M), Real-Time Clock (RTC), SD card module, LCD display, and an ESP32 Dev Kit V1 as the core microcontroller. One of its standout capabilities is the ability to store sensor data offline, using RTC timestamps when a Wi-Fi connection is not available. The device is battery-powered and highly reliable for extended field usage.</p>
-                <li>Fixed Unit- Continuously monitors field data and sends periodic readings to the cloud via MQTT with Wi-Fi and status indicators.</li>
-                <p>The Fixed Device is a stationary monitoring setup designed for continuous deployment in agricultural fields. It continuously monitors environmental parameters and periodically sends sensor data to the cloud using MQTT. To aid in diagnostics and usability, it includes, successful data transmission, and sensor functioning. This setup is particularly suitable for long-term monitoring and acts as a foundation for early warning systems in precision agriculture.</p>
-              </ul>
-
-              <div class="row align-items-center big-box p-5">
-              <!-- Left column - Image -->
-                <div class="col-lg-6">
-                  <center><h5>Portable Device Demonstration</h5></center>
-                  <center><video controls muted class="rounded" width="auto" height="600px">
-                    <source src="assets/video/portableDeviceDemoVideo.mp4" type="video/mp4" style="height:;">
-                    Your browser does not support the video tag.
-                  </video></center>
-                </div>
-
-              <!-- Right column - Description -->
-                <div class="col-lg-6">
-                  <center><h5>Fixed Device Demonstration</h5></center>
-                  <center><video controls muted class="rounded" width="auto" height="600px">
-                    <source src="assets/video/fixedDeviceDemoVideo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video></center>
-                </div>
-
-              </div>
-
-              <h4>Mobile Application</h4>
-              <p>The mobile application is built using Flutter, integrated with Firebase, Firestore, and MQTT for seamless cloud communication. It provides users with access to real-time and historical data through an intuitive interface. The app features interactive graphs, sensor-based alerts, and the ability to sync data offline, ensuring field workers can operate effectively even without internet access.</p>
-
-              <h4>Web Application</h4>
-              <p>The web dashboard is developed with a modern stack: React, Vite, and is hosted on Firebase. It offers an interactive dashboard that displays data insights such as geo-located sensor mapping, trend analysis of soil nutrients (NPK), environmental conditions, and detailed device connectivity status.</p>
-              <p>Access the web application using the link: <a href="https://environment-monitoring-s-d169b.web.app/" target="_blank">https://environment-monitoring-system.app/</a></p>
-              
-              <h4>ML Model</h4>
-              <p>The software system is extended with a separate Machine Learning model based on YOLOv5 for advanced agricultural insights. It is trained to process aerial or field images to deliver two core outputs: Tree Count and Tree Health Classification (Healthy or Unhealthy trees). This model is deployed on Google Cloud Run, and accessible via a RESTful API that accepts image uploads from both the mobile and web interfaces.</p>
-
-              <h4>Outcome</h4>
-              <ul>
-                <li>Accurate, geo-tagged soil health monitoring</li>
-                <li>AI-powered plant analysis for decision-making</li>
-                <li>Real-time and historical insights through mobile and web apps</li>
-                <li>Field-validated deployment-ready architecture</li>
-              </ul>
-
-              <div class="features mt-4">
-                <h3>Key Features</h3>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-clock"></i>
-                      <h4>Real-time IoT data over MQTT</h4>
-                      <p>Continuous real-time environmental data transmission via lightweight MQTT messaging protocol architecture</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-shield-check"></i>
-                      <h4>Offline logging with RTC+SD</h4>
-                      <p>Reliable offline sensor data storage using RTC-based timestamping and SD persistence</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-graph-up"></i>
-                      <h4>AI-powered plant health analysis</h4>
-                      <p>Automated plant health assessment using deep learning-based image classification techniques</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-gear"></i>
-                      <h4>Scalable Firestore backend</h4>
-                      <p>Cloud-native Firestore backend enabling scalable, structured, and secure data management</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
-                      <i class="bi bi-check-circle-fill"></i>
-                      <h4>Mobile + Web visualization</h4>
-                      <p>Cross-platform mobile and web dashboards for interactive environmental data visualization</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div class="social-links text-center">
+          <a
+            href="https://x.com/Ishan_Thathsara?t=pkKLsA0NtV2pU-R1LYrBnQ&s=08"
+            target="_blank"
+            class="twitter"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/share/16oDD1zCFL/"
+            target="_blank"
+            class="facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/ishan_thathsara?igsh=MTFrajdjZXR0dzcxYw=="
+            target="_blank"
+            class="instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/ishan-kumarasinghe"
+            target="_blank"
+            class="github"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ishan-kumarasinghe"
+            target="_blank"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
         </div>
-
       </div>
+    </header>
 
-    </section><!-- /Portfolio Details Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <!-- <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p> -->
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title dark-background">
+        <div
+          class="container d-lg-flex justify-content-between align-items-center"
+        >
+          <h1 class="mb-2 mb-lg-0">
+            Smart Agriculture Monitoring System (SAMS)
+          </h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Project Details</li>
+            </ol>
+          </nav>
+        </div>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      <!-- End Page Title -->
+
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/projects/sams/thumbnail1.webp"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/projects/sams/Field Visit1.webp"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/projects/sams/Field Visit6.webp"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/projects/sams/Field Visit4.webp"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/projects/sams/portableDevice.webp"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/projects/sams/3d design.webp"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="portfolio-info"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <h3>Project Information</h3>
+                <ul>
+                  <li><strong>Category</strong>: End to End IoT Project</li>
+                  <li>
+                    <strong>Client</strong>:
+                    <a href="https://watawalaplantations.lk/" target="_blank"
+                      >Watawala Palm Oil Plantation</a
+                    >
+                  </li>
+                  <li><strong>Time</strong>: Dec 2024-Jul 2025</li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a
+                      href="https://cepdnaclk.github.io/e20-3yp-Smart-Environmental-Monitoring-System-for-Palm-Oil-Plantation/"
+                      target="_blank"
+                      >www.sams.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div
+                class="portfolio-description"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h2>Project Overview</h2>
+                <p>
+                  This project is a complete IoT-based smart agriculture
+                  monitoring system designed to enhance farming decisions by
+                  collecting, analyzing, and visualizing real-time environmental
+                  and soil data. The list of parameters are,
+                </p>
+                <ul>
+                  <li>NPK (Nitrogen, Phosphorus, Potassium) values of soil</li>
+                  <li>Soil Moisture</li>
+                  <li>Rain gauge</li>
+                  <li>Sunlight Intensity</li>
+                  <li>Temperature</li>
+                  <li>Humidity</li>
+                </ul>
+                <p>
+                  The system uses multiple hardware devices to capture sensor
+                  readings and transmits them via MQTT to Firestore, enabling
+                  live monitoring through a mobile app (Flutter) and web app
+                  (React + Vite). An independent ML model (YOLOv5) processes
+                  aerial images to detect tree count and assess tree health,
+                  hosted via Cloud Run.
+                </p>
+                <h4>Hardware Devices</h4>
+                <ul>
+                  <li>
+                    Portable Unit- Field workers collect soil data using ESP32,
+                    NPK, Moisture, GPS, RTC, SD card, LCD. Stores data offline
+                    when Wi-Fi is unavailable.
+                  </li>
+                  <p>
+                    The Portable Device is a mobile unit carried by field
+                    workers to measure soil parameters at specific locations. It
+                    is equipped with multiple sensor modules including an NPK
+                    sensor, Soil Moisture sensor, GPS module (Neo-6M), Real-Time
+                    Clock (RTC), SD card module, LCD display, and an ESP32 Dev
+                    Kit V1 as the core microcontroller. One of its standout
+                    capabilities is the ability to store sensor data offline,
+                    using RTC timestamps when a Wi-Fi connection is not
+                    available. The device is battery-powered and highly reliable
+                    for extended field usage.
+                  </p>
+                  <li>
+                    Fixed Unit- Continuously monitors field data and sends
+                    periodic readings to the cloud via MQTT with Wi-Fi and
+                    status indicators.
+                  </li>
+                  <p>
+                    The Fixed Device is a stationary monitoring setup designed
+                    for continuous deployment in agricultural fields. It
+                    continuously monitors environmental parameters and
+                    periodically sends sensor data to the cloud using MQTT. To
+                    aid in diagnostics and usability, it includes, successful
+                    data transmission, and sensor functioning. This setup is
+                    particularly suitable for long-term monitoring and acts as a
+                    foundation for early warning systems in precision
+                    agriculture.
+                  </p>
+                </ul>
+
+                <div class="row align-items-center big-box p-5">
+                  <!-- Left column - Image -->
+                  <div class="col-lg-6">
+                    <center><h5>Portable Device Demonstration</h5></center>
+                    <center>
+                      <video
+                        controls
+                        preload="none"
+                        poster="assets/video/SamsPortableDevice.webp"
+                        class="rounded"
+                        width="auto"
+                        height="600px"
+                      >
+                        <source
+                          src="assets/video/Portabledevicedemovideo.webm"
+                          type="video/webm"
+                        />
+                        <source
+                          src="assets/video/portableDeviceDemoVideo.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </center>
+                  </div>
+
+                  <!-- Right column - Description -->
+                  <div class="col-lg-6">
+                    <center><h5>Fixed Device Demonstration</h5></center>
+                    <center>
+                      <video
+                        controls
+                        preload="none"
+                        poster="assets/video/SamsFixedDevice.webp"
+                        class="rounded"
+                        width="auto"
+                        height="600px"
+                      >
+                        <source
+                          src="assets/video/Fixeddevicedemovideo.webm"
+                          type="video/webm"
+                        />
+                        <source
+                          src="assets/video/fixedDeviceDemoVideo.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </center>
+                  </div>
+                </div>
+
+                <h4>Mobile Application</h4>
+                <p>
+                  The mobile application is built using Flutter, integrated with
+                  Firebase, Firestore, and MQTT for seamless cloud
+                  communication. It provides users with access to real-time and
+                  historical data through an intuitive interface. The app
+                  features interactive graphs, sensor-based alerts, and the
+                  ability to sync data offline, ensuring field workers can
+                  operate effectively even without internet access.
+                </p>
+
+                <h4>Web Application</h4>
+                <p>
+                  The web dashboard is developed with a modern stack: React,
+                  Vite, and is hosted on Firebase. It offers an interactive
+                  dashboard that displays data insights such as geo-located
+                  sensor mapping, trend analysis of soil nutrients (NPK),
+                  environmental conditions, and detailed device connectivity
+                  status.
+                </p>
+                <p>
+                  Access the web application using the link:
+                  <a
+                    href="https://environment-monitoring-s-d169b.web.app/"
+                    target="_blank"
+                    >https://environment-monitoring-system.app/</a
+                  >
+                </p>
+
+                <h4>ML Model</h4>
+                <p>
+                  The software system is extended with a separate Machine
+                  Learning model based on YOLOv5 for advanced agricultural
+                  insights. It is trained to process aerial or field images to
+                  deliver two core outputs: Tree Count and Tree Health
+                  Classification (Healthy or Unhealthy trees). This model is
+                  deployed on Google Cloud Run, and accessible via a RESTful API
+                  that accepts image uploads from both the mobile and web
+                  interfaces.
+                </p>
+
+                <h4>Outcome</h4>
+                <ul>
+                  <li>Accurate, geo-tagged soil health monitoring</li>
+                  <li>AI-powered plant analysis for decision-making</li>
+                  <li>
+                    Real-time and historical insights through mobile and web
+                    apps
+                  </li>
+                  <li>Field-validated deployment-ready architecture</li>
+                </ul>
+
+                <div class="features mt-4">
+                  <h3>Key Features</h3>
+                  <div class="row gy-3">
+                    <div class="col-md-6">
+                      <div
+                        class="feature-item"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                      >
+                        <i class="bi bi-clock"></i>
+                        <h4>Real-time IoT data over MQTT</h4>
+                        <p>
+                          Continuous real-time environmental data transmission
+                          via lightweight MQTT messaging protocol architecture
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div
+                        class="feature-item"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                      >
+                        <i class="bi bi-shield-check"></i>
+                        <h4>Offline logging with RTC+SD</h4>
+                        <p>
+                          Reliable offline sensor data storage using RTC-based
+                          timestamping and SD persistence
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div
+                        class="feature-item"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                      >
+                        <i class="bi bi-graph-up"></i>
+                        <h4>AI-powered plant health analysis</h4>
+                        <p>
+                          Automated plant health assessment using deep
+                          learning-based image classification techniques
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div
+                        class="feature-item"
+                        data-aos="fade-up"
+                        data-aos-delay="700"
+                      >
+                        <i class="bi bi-gear"></i>
+                        <h4>Scalable Firestore backend</h4>
+                        <p>
+                          Cloud-native Firestore backend enabling scalable,
+                          structured, and secure data management
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div
+                        class="feature-item"
+                        data-aos="fade-up"
+                        data-aos-delay="800"
+                      >
+                        <i class="bi bi-check-circle-fill"></i>
+                        <h4>Mobile + Web visualization</h4>
+                        <p>
+                          Cross-platform mobile and web dashboards for
+                          interactive environmental data visualization
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Details Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative">
+      <div class="container">
+        <div class="copyright text-center">
+          <!-- <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p> -->
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
       </div>
-    </div>
+    </footer>
 
-  </footer>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
