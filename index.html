@@ -29,6 +29,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Preload LCP Image -->
+  <link rel="preload" fetchpriority="high" as="image" href="assets/img/profile/DepProfilePic.webp" type="image/webp">
+
 </head>
 
 <body class="index-page">
@@ -110,7 +113,7 @@
               <div class="hero-visual">
                 <div class="profile-container">
                   <div class="profile-background"></div>
-                  <img src="assets/img/profile/DepProfilePic.webp" alt="Alexander Chen" class="profile-image">
+                  <img src="assets/img/profile/DepProfilePic.webp" alt="Alexander Chen" class="profile-image" fetchpriority="high">
                 </div>
               </div>
             </div>
