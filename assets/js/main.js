@@ -226,4 +226,28 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Disable right-click and inspection shortcuts
+   */
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
+  
+  document.addEventListener('keydown', (e) => {
+    // Disable F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+    // Disable Ctrl+Shift+I (Windows) / Cmd+Option+I (Mac)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
+      e.preventDefault();
+    }
+    // Disable Ctrl+Shift+J (Windows) / Cmd+Option+J (Mac)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'J' || e.key === 'j')) {
+      e.preventDefault();
+    }
+    // Disable Ctrl+U (Windows) / Cmd+U (Mac) - View Source
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'u' || e.key === 'U')) {
+      e.preventDefault();
+    }
+  });
+
 })();
